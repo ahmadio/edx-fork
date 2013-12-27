@@ -50,7 +50,7 @@ class UserFixture(WebAppFixture):
         command = self.cmd(
             'SERVICE_VARIANT=bok_choy', '/edx/app/edxapp/venvs/edxapp/bin/python',
             '/edx/app/edxapp/edx-platform/manage.py', 'lms', '--settings=bok_choy',
-            'create_user', '-u', self.username, '-e', self.email, '-p', self.password,
+            'create_student_user', '-u', self.username, '-e', self.email, '-p', self.password,
             '-m', self.enrollment_mode
         )
 
