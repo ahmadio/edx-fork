@@ -12,8 +12,8 @@
 <%! from student.models import UserProfile %>
 <%! from datetime import date %>
 <%! import calendar %>
-
-<%block name="title"><title>${_("Register for {platform_name}").format(platform_name=settings.PLATFORM_NAME)}</title></%block>
+<%! PLATFORM_NAME = "Dares" %>
+<%block name="title"><title>${_("Register for {platform_name}").format(platform_name=PLATFORM_NAME)}</title></%block>
 
 <%block name="js_extra">
   <script type="text/javascript">
@@ -76,7 +76,7 @@
         $submitButton.
           removeClass('is-disabled').
           removeProp('disabled').
-          html("${_('Create My {platform_name} Account').format(platform_name=settings.PLATFORM_NAME)}");
+          html("${_('Create My {platform_name} Account').format(platform_name=PLATFORM_NAME)}");
       }
       else {
         $submitButton.
@@ -99,7 +99,7 @@
 
       <!-- status messages -->
       <div role="alert" class="status message">
-        <h3 class="message-title">${_("We're sorry, {platform_name} enrollment is not available in your region").format(platform_name=settings.PLATFORM_NAME)}</h3>
+        <h3 class="message-title">${_("We're sorry, {platform_name} enrollment is not available in your region").format(platform_name=PLATFORM_NAME)}</h3>
       </div>
 
       <div role="alert" class="status message submission-error" tabindex="-1">
@@ -236,7 +236,7 @@
 
           % if 'goals' in settings.REGISTRATION_OPTIONAL_FIELDS:
           <li class="field text" id="field-goals">
-            <label for="goals">${_("Please share with us your reasons for registering with {platform_name}").format(platform_name=settings.PLATFORM_NAME)}</label>
+            <label for="goals">${_("Please share with us your reasons for registering with {platform_name}").format(platform_name=PLATFORM_NAME)}</label>
             <textarea id="goals" name="goals" value=""></textarea>
           </li>
           % endif

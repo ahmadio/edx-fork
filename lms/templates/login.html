@@ -5,7 +5,8 @@
 <%! from django.core.urlresolvers import reverse %>
 <%! from django.utils.translation import ugettext as _ %>
 
-<%block name="title"><title>${_("Log into your {platform_name} Account").format(platform_name=settings.PLATFORM_NAME)}</title></%block>
+<%! PLATFORM_NAME = "Dares" %>
+<%block name="title"><title>${_("Log into your {platform_name} Account").format(platform_name=PLATFORM_NAME)}</title></%block>
 
 <%block name="js_extra">
   <script type="text/javascript">
@@ -83,7 +84,7 @@
         $submitButton.
           removeClass('is-disabled').
           removeProp('disabled').
-          html("${_('Log into My {platform_name} Account').format(platform_name=settings.PLATFORM_NAME)} <span class='orn-plus'>+</span> ${_('Access My Courses')}");
+          html("${_('Log into My {platform_name} Account').format(platform_name=PLATFORM_NAME)} <span class='orn-plus'>+</span> ${_('Access My Courses')}");
       }
       else {
         $submitButton.
@@ -105,7 +106,7 @@
 
       <!-- status messages -->
       <div role="alert" class="status message">
-        <h3 class="message-title">${_("We're Sorry, {platform_name} accounts are unavailable currently").format(platform_name=settings.PLATFORM_NAME)}</h3>
+        <h3 class="message-title">${_("We're Sorry, {platform_name} accounts are unavailable currently").format(platform_name=PLATFORM_NAME)}</h3>
       </div>
 
       <div role="alert" class="status message submission-error" tabindex="-1">
@@ -116,7 +117,7 @@
       </div>
 
       <p class="instructions sr">
-        ${_('Please provide the following information to log into your {platform_name} account. Required fields are noted by <strong class="indicator">bold text and an asterisk (*)</strong>.').format(platform_name=settings.PLATFORM_NAME)}
+        ${_('Please provide the following information to log into your {platform_name} account. Required fields are noted by <strong class="indicator">bold text and an asterisk (*)</strong>.').format(platform_name=PLATFORM_NAME)}
       </p>
 
       <div class="group group-form group-form-requiredinformation">
@@ -126,7 +127,7 @@
           <li class="field required text" id="field-email">
             <label for="email">${_('E-mail')}</label>
             <input class="" id="email" type="email" name="email" value="" placeholder="example: username@domain.com" required aria-required="true" aria-described-by="email-tip" />
-            <span class="tip tip-input" id="email-tip">${_("This is the e-mail address you used to register with {platform}").format(platform=settings.PLATFORM_NAME)}</span>
+            <span class="tip tip-input" id="email-tip">${_("This is the e-mail address you used to register with {platform}").format(platform=PLATFORM_NAME)}</span>
           </li>
           <li class="field required password" id="field-password">
             <label for="password">${_('Password')}</label>
