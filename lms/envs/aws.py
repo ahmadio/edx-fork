@@ -55,8 +55,8 @@ FEATURES['ENABLE_DISCUSSION_SERVICE'] = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ###################################### Stripe #################################
-STRIPE_KEY_PUBLIC = 'pk_test_W0ylESS65cR7UpewUNuI2k6o'
-STRIPE_KEY_SECRET = 'sk_test_TddMoykYgyC7rfxs13USIi0Y'
+STRIPE_KEY_PUBLIC = 'pk_test_yrNR7N5jcsqo23tbvR8OJZeE'
+STRIPE_KEY_SECRET = 'sk_test_sDshP03YNn7oZlRAQUqlDxlf'
 
 ###################################### CELERY  ################################
 
