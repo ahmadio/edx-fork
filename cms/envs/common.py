@@ -421,7 +421,10 @@ INSTALLED_APPS = (
     'django.contrib.admin',
 
     # for managing course modes
-    'course_modes'
+    'course_modes',
+
+    # for managing coupons
+    'coupons'
 )
 
 

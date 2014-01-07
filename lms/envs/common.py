@@ -1016,9 +1016,18 @@ INSTALLED_APPS = (
     # Different Course Modes
     'course_modes',
 
+    # payment with coupons
+    'coupons',
+
     # Student Identity Verification
     'verify_student',
 )
+
+
+####################### Stripe checkout ###############################
+
+STRIPE_KEY_PUBLIC = 'pk_test_W0ylESS65cR7UpewUNuI2k6o'
+STRIPE_KEY_SECRET = 'sk_test_TddMoykYgyC7rfxs13USIi0Y'
 
 ######################### MARKETING SITE ###############################
 EDXMKTG_COOKIE_NAME = 'edxloggedin'

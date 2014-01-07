@@ -54,6 +54,10 @@ FEATURES['ENABLE_DISCUSSION_SERVICE'] = True
 # for other warnings.
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
+###################################### Stripe #################################
+STRIPE_KEY_PUBLIC = AUTH_TOKENS.get("STRIPE_KEY_PUBLIC", "")
+STRIPE_KEY_SECRET = AUTH_TOKENS.get("STRIPE_KEY_SECRET", "")
+
 ###################################### CELERY  ################################
 
 # Don't use a connection pool, since connections are dropped by ELB.
