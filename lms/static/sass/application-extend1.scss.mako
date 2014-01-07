@@ -34,6 +34,8 @@
 @import 'base/font_face';
 @import 'base/extends';
 @import 'base/animations';
+@import 'base/stanford';
+
 
 // base - starter
 @import 'base/base';

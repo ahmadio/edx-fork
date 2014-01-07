@@ -691,6 +691,7 @@ PIPELINE_CSS = {
     'style-app': {
         'source_filenames': [
             'sass/application.css',
+            'sass/webflow.css',
             'sass/ie.css'
         ],
         'output_filename': 'css/lms-style-app.css',

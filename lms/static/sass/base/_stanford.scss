@@ -1,0 +1,1251 @@
+/****************************************************************************************************
+ *   Stanford Theming File
+ *
+ *   Contains all the theme color definitions for the Stanford Open Source MOOC Project
+ *
+ ****************************************************************************************************/
+
+//-----------------
+//  Color variables (from Stanford palette unless noted)
+//-----------------
+
+//Cardinal Color Variables
+$cardinal-color: #5abce9;
+$cardinal-color-dark: #5abce9; //Link Color
+$cardinal-light: #5abce9; //Selected Header BG Color, ie. calendar        ***Custom, not from palette***
+$cardinal-bg: #5abce9; //Selected Content BG Color, ie. calendar          ***Custom, not from palette***
+
+//Beige Color Variables
+$beige: #9d9573;
+$beige-60: lighten($beige, 18.5%); //Main Border/HR Color
+$beige-25: lighten($beige, 25%); 
+
+//Sandstone Color Variables
+$sandstone: #ddcf99;
+$sandstone-50: lighten($sandstone, 9%);
+$sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color 
+
+//Gray Color Variables
+$black: rgb(51, 51, 51);
+$black-80: lighten($black, 18.25%);
+
+$gray: $black; //Main Text Color
+$gray-75: lighten($gray, 18.25%); //Lighter Text Color
+
+$gray-3: #e9e6df; //Block/Course BG Color
+$gray-2: #f2f1eb;
+$gray-1: #fbfbf9; //Main BG Color
+
+
+
+//-----------------
+//  Font Assignment
+//-----------------
+
+$theme-sans-font: Lato,sans-serif;
+$sans-serif: $theme-sans-font, $sans-serif;
+$body-font-family: $sans-serif;
+
+$theme-serif-font: Lato,sans-serif;
+$serif: $theme-serif-font, $serif;
+
+
+
+
+//-----------------
+//  Theme Element Assignments
+//-----------------
+
+$body-bg: $gray-1;
+$container-bg: $gray-1;
+$login-register-bg: $gray-1;
+$content-wrapper-bg: $gray-1;
+$header-image: none;
+$header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+$courseware-header-image: none;
+$courseware-header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+$footer-bg: $sandstone-25;
+$courseware-footer-border: 1px solid $beige-60;
+$courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
+$courseware-footer-margin: 50px;
+
+$faded-hr-image-1: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-2: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-3: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-4: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-5: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-6: linear-gradient($beige-60 0%, $beige-60);
+
+$base-font-color: $black;
+$lighter-base-font-color: $black-80;
+$very-light-text: $gray-1;
+
+$link-color: $cardinal-color-dark;
+$link-color-d1: $cardinal-color-dark;
+$link-hover: $cardinal-light;
+$site-status-color: $cardinal-bg;
+
+$button-color: #2f4e58;
+$button-archive-color: $gray-3;
+
+$shadow-color: $gray;
+
+// actions
+$button-bg-image: none;
+$button-bg-color: $button-color;
+$button-bg-hover-color: $button-color;
+
+// actions - primary
+$action-primary-bg: $button-color;
+$action-primary-fg: $gray-2;
+$action-primary-shadow: none;
+
+// focused - hover/active pseudo states
+$action-primary-focused-bg: $button-color;
+$action-primary-focused-fg: $gray-1;
+
+// current or active navigation item
+$action-primary-active-bg: $button-color;
+$action-primary-active-fg: $gray-1;
+$action-primary-active-shadow: none;
+$action-primary-active-focused-fg: $gray-2;
+$action-primary-active-focused-shadow: none;
+
+// disabled
+$action-primary-disabled-bg: $gray-75;
+$action-prmary-disabled-fg: $gray-1;
+
+
+
+// actions - secondary
+$action-secondary-bg: $sandstone;
+$action-secondary-fg: $gray;
+$action-secondary-shadow: none;
+
+// focused - hover/active pseudo states
+$action-secondary-focused-bg: $sandstone-50;
+$action-secondary-focused-fg: $gray;
+
+// current or active navigation item
+$action-secondary-active-bg: $sandstone-50;
+$action-secondary-active-fg: $gray;
+$action-secondary-active-shadow: none;
+$action-secondary-active-focused-fg: $gray-75;
+$action-secondary-active-focused-shadow: none;
+
+// disabled
+$action-secondary-disabled-bg: $gray-3;
+$action-secondary-disabled-fg: $gray;
+
+//
+
+$border-color-1: $beige-60;
+$border-color-2: $beige-60;
+$border-color-3: $beige-60;
+$outer-border-color: $beige-60;
+
+$sidebar-color: $gray-1;
+
+$dashboard-profile-header-image: none;
+$dashboard-profile-header-color: $sandstone-25;
+$dashboard-profile-color: $gray-3;
+$dot-color: $beige-60;
+
+$course-bg-color: $gray-3;
+$course-bg-image: none;
+$account-content-wrapper-bg: $gray-1;
+
+$course-profile-bg: $gray-1;
+$course-header-bg: transparentize($gray-1, .1);
+
+$sidebar-chapter-bg-top: transparentize($gray-1, .3);
+$sidebar-chapter-bg-bottom: transparentize($gray-1, .9);
+$sidebar-chapter-bg: $gray-2;
+$sidebar-active-image: $gray-3;
+
+$form-bg-color: $gray-1;
+$modal-bg-color: $gray-1;
+
+//TOP HEADER IMAGE MARGIN
+$header_image_margin: -77px;
+
+//FOOTER MARGIN
+$footer_margin: ($baseline/4) 0;
+
+//-----------------
+//  CSS BG Images
+//-----------------
+$homepage-bg-image: '../themes/stanford/images/codecoalition-pano.png';
+
+$login-banner-image: none;
+$register-banner-image: none;
+
+$video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
+
+//-----------------
+//  Mixin Styles
+//-----------------
+@mixin login_register_h1_style {
+    clip: auto !important;
+    height: 50px;
+    width: 550px;
+    margin-top: 50px;
+}
+
+@mixin footer_references_style {
+    margin: 0 !important;
+    text-align: right;
+}
+
+//-------------------------------
+// Central box on home/courses
+//-------------------------------
+
+.home .media,
+.content-wrapper .find-courses header.search .inner-wrapper.main-search hgroup {
+    display: none;
+}
+
+//--------------------------------
+// Body
+//--------------------------------
+
+html body, html, body {
+    height: auto;
+    color: $base-font-color;
+    background-color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    padding-top: 0px;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
+
+    .content-wrapper {
+        background-color: #fff;
+    }
+}
+
+body .container {
+    max-width: 960px
+}
+
+
+//--------------------------------
+// Buttons
+//--------------------------------
+
+html body {
+    .m-btn-edged, .m-btn-base, .m-btn-primary, header.global .nav-courseware li .cta, header.global .nav-global li a, .login .form-actions button[type="submit"], .register .form-actions button[type="submit"], .passwordreset .form-actions button[type="submit"], #forgot-password-modal #password-reset .form-actions button[type="submit"], .view-partial-mktgregister .action.action-register, .view-partial-mktgregister .action.access-courseware, .m-btn-secondary, .view-partial-mktgregister .action.is-registered, .view-partial-mktgregister .action.registration-closed, .view-partial-mktgregister .action.coming-soon, .dashboard .my-courses .empty-dashboard-message a, .dashboard .my-courses .course .info .enter-course, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong, .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register {
+        border-radius: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        font-size: 13px;
+        padding-left: 30px;
+        padding-right: 30px;
+        letter-spacing: 1px;
+        color: white !important;
+        margin-top: -2px;
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    .dashboard .my-courses .course .info .enter-course,
+    .dashboard .my-courses .course .info .enter-course:hover,
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong,
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta strong:hover:not(:disabled),
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register,
+    .course-info header.course-profile .intro-inner-wrapper .intro .main-cta a.register:hover:not(:disabled) {
+        box-shadow: none;
+        border: none;
+        background-image: none;
+        text-shadow: none;
+    }
+}
+
+
+//--------------------------------
+// Header
+//--------------------------------
+
+body header.global {
+    background-color: #56bbea;
+    box-shadow: none;
+    border: none;
+
+    nav {
+        max-width: 960px;
+    }
+
+    ol.nav-global {
+        float: right;
+        margin: 5px 0px 0 20px;
+
+        li a {
+            @extend .btn !optional;
+            background: none repeat scroll 0% 0% rgb(47, 78, 88);
+            border: medium none;
+            padding: 10px 20px;
+            text-align: center;
+            text-shadow: none;
+        }
+    }
+
+    ol.user {
+        margin-top: 3px;
+
+        li.primary > a,
+        li.primary > a:hover {
+            background-color: rgb(233, 230, 223);
+            padding-top: 9px !important;
+            padding-bottom: 8px !important;
+
+            .avatar {
+                top: 6px;
+            }
+        }
+    }
+
+    h1.logo {
+        margin-top: 4px;
+
+    }
+}
+
+body header.global.slim {
+    background-color: #56bbea;
+
+    h1.logo img {
+        height: auto;
+    }
+
+    h2 {
+        width: 400px;
+        text-shadow: none;
+        color: #fff;
+
+        .provider {
+            color: #fff;
+        }
+    }
+}
+
+//--------------------------------
+// Footer
+//--------------------------------
+
+.footer {
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: block;
+    overflow: visible;
+    height: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 70px;
+    padding-bottom: 45px;
+    background-color: #56bbea;
+
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+
+    h5 {
+        position: static;
+        display: block;
+        margin: 6px 0px 0px;
+        float: right;
+        color: #2f4f59;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+    }
+
+    .checkout-footer {
+        position: absolute;
+    }
+    .footer-logo {
+        width: 30%;
+        height: 65px;
+        float: left;
+        background-image: none;
+        opacity: 0.2;
+    }
+    .social-wrapper {
+        margin-top: -40px;
+        margin-right: 0px;
+        margin-left: 4px;
+        padding-right: 0px;
+        padding-left: 0px;
+        float: right;
+        text-align: right;
+    }
+    .social-link {
+        padding-right: 5px;
+        padding-left: 5px;
+        opacity: 0.57;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+    .social-link:hover {
+        padding-top: 0px;
+        opacity: 1;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+    .info-wrapper {
+        width: 100%;
+        float: left;
+    }
+    .cc-namelogo {
+        width: 254px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        float: left;
+    }
+    .bottom-container {
+        height: 118px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        opacity: 1;
+    }
+    .bottomdivblock {
+        padding-bottom: 30px;
+    }
+    .heading {
+        color: white;
+        text-shadow: rgba(33, 33, 33, 0.24) 0px 1px 0px;
+    }
+    .footerlogo {
+        margin-top: 0px;
+        margin-bottom: -25px;
+        margin-left: -11px;
+        padding-top: 22px;
+        padding-bottom: 0px;
+    }
+    .copyright {
+        position: static;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        float: left;
+        opacity: 0.9;
+        color: #2f4f59;
+    }
+    .contactus-link {
+        position: static;
+        right: 0px;
+        bottom: 0px;
+        margin-top: 5px;
+        margin-right: 0px;
+        margin-left: 0px;
+        float: right;
+        color: #2f4f59;
+        text-align: center;
+        text-decoration: underline;
+    }
+    .bottom-logo {
+        position: static;
+        left: 0px;
+        top: 0px;
+        right: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        float: left;
+    }
+    .navbar-section {
+        background-color: #56bbea;
+    }
+    .copy-div {
+        margin-top: 40px;
+    }
+    .help-div {
+        margin-top: 10px;
+    }
+    .contactus-div {
+        margin-top: 5px;
+    }
+}
+
+//--------------------------------
+// Home
+//--------------------------------
+
+body .homepage-content {
+
+    /* General ********************************/
+
+    h1 {
+        margin: 10px 0px;
+        font-size: 38px;
+        line-height: 44px;
+        font-weight: 700;
+    }
+
+    h2 {
+        margin: 10px 0px;
+        font-size: 32px;
+        line-height: 36px;
+        font-weight: 700;
+    }
+
+    h3 {
+        margin-right: 0px;
+        margin-left: 0px;
+        padding-bottom: 15px;
+        color: #222;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 300;
+        text-align: left;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        border-bottom: 0px none rgba(0, 0, 0, 0.29);
+    }
+
+    h4 {
+        margin: 10px 0px;
+        padding-left: 25px;
+        line-height: 24px;
+        font-weight: 300;
+        text-align: left;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        color: black;
+        font-size: 18px;
+    }
+
+    h5 {
+        position: static;
+        display: block;
+        margin: 6px 0px 0px;
+        float: right;
+        color: #2f4f59;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 300;
+    }
+
+    h6 {
+        position: absolute;
+        margin: 56px 0px 10px;
+        float: left;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+    }
+
+    .subheaders {
+        margin-top: 20px;
+        padding-top: 40px;
+        padding-bottom: 10px;
+        font-family: Lato, sans-serif;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    p {
+        width: 188px;
+        margin-bottom: 5px;
+        text-align: left;
+        color: $base-font-color;
+        line-height: 21px;
+    }
+
+    .button {
+        display: inline-block;
+        margin-top: 20px;
+        margin-left: 0px;
+        padding: 13px 15px 0px;
+        float: none;
+        border-radius: 12px 12px 12px 12px;
+        background-color: rgb(86, 187, 234);
+        transition: all 500ms ease 0s;
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        color: white;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+        border: none;
+        background-image: none;
+        box-shadow: none;
+        text-shadow: none;
+        padding: 10px 20px;
+    }
+    .button:hover,
+    input[type="submit"]:hover {
+        border: 0px none rgb(182, 182, 182);
+        background-color: rgb(119, 119, 119);
+        background-image: none;
+        transition: none 0s ease 0s;
+        color: white;
+        font-weight: 700;
+    }
+    .button.newsletter {
+        line-height: 20px;
+        margin-top: 19px;
+        font-size: 14px;
+        font-weight: 300px;
+    }
+
+    .section {
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .section.header {
+        position: static;
+        display: block;
+        overflow: visible;
+        width: auto;
+        height: 327px;
+        padding-top: 1px;
+        padding-bottom: 59px;
+        float: none;
+        clear: none;
+        background-color: #3ebced;
+        background-image: url(../themes/stanford/images/cc_hugeheader_home-01.png);
+        background-position: 45% -80%;
+        background-size: auto 800px;
+    }
+    .section.header.topnav {
+        padding-bottom: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+    }
+    .section.dark {
+        border-style: solid;
+        border-width: 0px;
+        background-color: white;
+        background-image: none;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+        font-weight: 300;
+        text-align: center;
+    }
+    .section.dark.web {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-image: none;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+    .section.dark.section_platform {
+        padding-top: 0px;
+        -webkit-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+    .icon {
+        margin-bottom: 0px;
+        margin-left: -22px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    /* Learn/Practice/Build ***********/
+
+    .backgroundband {
+        height: 580px;
+        margin-top: 330px;
+        background-color: rgb(63, 189, 237);
+    }
+
+    .abovefold {
+        margin-top: -910px;
+        height: 870px;
+        margin-bottom: 20px;
+        background-color: rgba(0, 0, 0, 0);
+        background-image: url(../themes/stanford/images/Background_Header-02.png);
+        background-position: 50% 0px;
+        background-repeat: no-repeat no-repeat;
+    }
+
+    .lpb {
+        padding-top: 94px;
+        padding-bottom: 0px;
+    }
+    .lpb_column {
+        margin-top: 1px;
+    }
+    .lpb_icon {
+        margin-right: 0px;
+        margin-left: -94px;
+        padding-left: 364px;
+        float: none;
+        text-align: right;
+        height: 96px;
+    }
+    .lpb_text {
+        margin-left: -113px;
+        padding-top: 40px;
+        padding-right: 0px;
+        padding-left: 0px;
+        font-family: Lato, sans-serif;
+        color: #5d5d5d;
+        font-size: 56px;
+        font-weight: 300;
+        text-align: left;
+    }
+
+    /* Why? ***************************/
+
+    .whycc_text {
+        font-family: Lato, sans-serif;
+        color: white;
+        font-size: 14px;
+        font-weight: 300;
+
+        a, a:visited, a:hover {
+            color: white;
+            font-weight: 300;
+        }
+    }
+    .whycc_head {
+        padding-bottom: 10px;
+        font-family: Lato, sans-serif;
+        color: white;
+        font-weight: 600;
+        text-align: center;
+        text-transform: none;
+    }
+    .whycc {
+        margin-top: 90px;
+    }
+
+    /* How it works *******************/
+
+    .howitworks {
+        .howitworks_bordersub {
+            border-top: 2px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .howitworksheader {
+            font-family: Lato, sans-serif;
+            color: #3fbded;
+            font-weight: 400;
+            text-align: left;
+            padding-left: 0;
+        }
+
+        .howitworkstext {
+            padding-bottom: 15px;
+            font-size: 12px;
+        }
+
+        .howitworks_columns {
+            padding-right: 25px;
+            padding-left: 25px;
+        }
+    }
+
+    /* Previous students **************/
+
+    .previousstudent {
+        padding-top: 0px;
+        background-color: #e6e6e6;
+        padding-bottom: 20px;
+
+        .ps_text {
+            display: block;
+            width: 200px;
+            margin-right: auto;
+            margin-left: auto;
+            padding-bottom: 20px;
+            text-align: left;
+            font-size: 12px;
+        }
+        .ps_container {
+            background-color: #fff;
+            margin-right: 1px;
+            padding-right: 0px;
+            border: 1px solid white;
+            border-radius: 13px;
+            background-image: -webkit-linear-gradient(white, white);
+            background-image: -o-linear-gradient(white, white);
+            background-image: linear-gradient(white, white);
+        }
+        .ps_header {
+            font-family: Lato, sans-serif;
+            font-weight: 600;
+            text-align: center;
+            padding-left: 0;
+        }
+        .hp_text {
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 15px;
+            font-size: 12px;
+        }
+
+        .studenttests.image {
+            margin: 10px 18px 0;
+        }
+
+    }
+
+    /* Reviews ************************/
+
+    .reviews {
+        .reviews.individual {
+            height: 75px;
+            margin-bottom: 15px;
+            background-color: #e6e6e6;
+            font-size: 12px;
+        }
+        .reviews.individual.leftbar {
+            border-left: 6px solid #3fbded;
+        }
+        .reviews.individual.rightbar {
+            border-right: 5px solid #304f59;
+        }
+        .reviewstext {
+            margin-right: 25px;
+            margin-left: 20px;
+            padding-top: 10px;
+        }
+        .reviewstext.omar {
+            padding-top: 30px;
+        }
+        .reviewstext.herdy {
+            padding-top: 30px;
+        }
+        .reviewstext.alex {
+            padding-top: 30px;
+        }
+
+    }
+
+    /* FAQ ****************************/
+
+    .header.faq {
+        margin-top: 10px;
+        margin-bottom: 60px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #304f59;
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: white;
+        font-weight: 300;
+        text-align: center;
+    }
+    .faqsheader {
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .faq {
+        font-family: Lato, sans-serif;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .faq.faqheader {
+        font-size: 32px;
+    }
+    .faq.faqsubheader {
+        font-family: Lato, sans-serif;
+    }
+    .faq.faqtext {
+        margin-top: 8px;
+        margin-bottom: 30px;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .w-container.faqcontent {
+        margin-bottom: 40px;
+    }
+
+
+    /* Other **************************/
+
+    .portfolio-text {
+        margin-top: 93px;
+    }
+    .gallery {
+        margin-top: 55px;
+        text-align: center;
+    }
+    .center-tittle {
+        margin-top: -17px;
+        padding-bottom: 0px;
+        text-align: center;
+    }
+    .courseimg {
+        margin-left: 76px;
+        padding-left: 0px;
+        float: none;
+        background-size: 125px;
+    }
+    .coursegallery {
+        margin-top: -30px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        float: none;
+    }
+    .sitemap {
+        font-size: 10px;
+    }
+    .ourcompany {
+        margin-right: 1px;
+        margin-left: -21px;
+        padding-right: 0px;
+        padding-left: 0px;
+        opacity: 0.91;
+        color: #2f4f59;
+        line-height: 13px;
+        font-weight: 200;
+    }
+    .sitemap-courses {
+        margin-left: -20px;
+        opacity: 0.9;
+        color: #2f4f59;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .sitemap-header {
+        margin-left: -25px;
+        opacity: 0.9;
+        color: #2f4f59;
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .sitemap-courses-2 {
+        width: 92px;
+        margin-left: -14px;
+        opacity: 0.9;
+        color: #2f4f59;
+        font-size: 10px;
+        line-height: 13px;
+    }
+    .sitemap-blank {
+        color: #36bdea;
+        font-size: 10px;
+    }
+    .coursedescription {
+        width: 97px;
+        margin-right: -64px;
+        margin-left: 98px;
+        font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: black;
+        text-decoration: none;
+    }
+
+    .hiringpartners {
+        width: 310px;
+        font-size: 12px;
+    }
+    .course-link-block {
+        display: inline-block;
+        width: 100%;
+        margin-left: 73px;
+        padding-right: 0px;
+    }
+    .oneday-ios-image {
+        background-color: rgba(0, 0, 0, 0);
+        background-image: none;
+    }
+    .htmlcss-tumblr-image {
+        margin-right: 0px;
+        float: none;
+    }
+    .dead-column {
+        padding-right: 18px;
+        padding-left: 0px;
+    }
+    .class-column {
+        padding-right: 10px;
+    }
+    .courseh1 {
+        direction: ltr;
+        color: #777;
+        font-size: 15px;
+        line-height: 21px;
+        letter-spacing: 0px;
+        text-transform: none;
+        text-shadow: rgba(33, 33, 33, 0.24) 0px 1px 0px;
+    }
+    .sample-content-p {
+        width: 366px;
+        margin-top: 14px;
+        margin-left: 26px;
+        padding-left: 0px;
+        float: none;
+    }
+    .sample-content-div {
+        margin-top: 36px;
+        padding-left: 0px;
+    }
+    .newsletter-input-field {
+        width: 70%;
+        height: 40px;
+        margin-top: 19px;
+        margin-bottom: 1px;
+        margin-left: 22px;
+        float: left;
+        border: 1px solid #56bbea;
+        border-radius: 8px;
+    }
+
+    .newsletter-error {
+        color: red;
+    }
+}
+
+//----------------------------------------------
+// Registration
+//----------------------------------------------
+
+body.view-register, 
+body.view-login {
+    .introduction header .title {
+        width: 600px;
+        height: 65px;
+        margin-top: 0px;
+        left: 0px;
+
+        .title-sub {
+            margin-left: 0;
+        }
+    }
+}
+
+#field-honorcode {
+    display: none;
+}
+
+//--------------------------------
+// Checkout form
+//--------------------------------
+
+body.register.verification-process .content-wrapper {
+    background-color: #fff;
+
+    .checkout-form {
+        max-width: 1100px;
+        margin: 0 auto;
+
+        .payment-fields-div {
+            margin: 30px 90px 30px 60px;
+            padding-right: 30px;
+            padding-left: 30px;
+            border: 3px solid rgba(86, 187, 234, 0.29);
+            box-shadow: none;
+            opacity: 1;
+        }
+        .payment-field {
+            width: 80%;
+            margin-top: 22px;
+            margin-bottom: 0px;
+            border: 1px solid rgba(0, 0, 0, 0.29);
+            margin-left: 31px;
+            padding-right: 0px;
+            border-radius: 7px;
+            color: black;
+        }
+        .payment-field.promo-field {
+            width: 50%;
+            margin-top: 10px;
+        }
+        .payment-field.sec-code {
+            width: 60%;
+            margin-right: 0px;
+        }
+        .payment-field.exp-date {
+            padding-right: 0px;
+        }
+        .payment-button {
+            margin-top: 20px;
+            border-radius: 8px;
+            background-color: #56bbea;
+            -webkit-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+            margin-left: 31px;
+        }
+        .payment-info-div {
+            margin: 30px 58px 30px 0px;
+            padding-right: 74px;
+            padding-left: 0px;
+        }
+        .payment-paragraph {
+            font-family: Lato, sans-serif;
+            width: 262px;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 300;
+        }
+        .promo-label {
+            margin-top: 15px;
+            padding-right: 0px;
+            padding-left: 31px;
+        }
+        .form-container {
+            width: 580px;
+            height: 354px;
+            padding-top: 62px;
+            background-color: rgba(0, 0, 0, 0);
+        }
+        .column-subblock {
+            padding-top: 16px;
+            padding-bottom: 1px;
+        }
+        .h3-sub {
+            font-size: 21px;
+            line-height: 4px;
+            font-weight: 300;
+        }
+        .quotes {
+            margin-top: 37px;
+            font-weight: 300;
+            text-align: center;
+        }
+        .below-payment {
+            margin-right: 50px;
+            margin-left: 67px;
+            border-top: 1px solid rgba(0, 0, 0, 0.29);
+            margin-bottom: 40px;
+        }
+        .column2-payment {
+            margin-top: 28px;
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .callout {
+            margin-top: -157px;
+            margin-bottom: 0px;
+            padding-top: 148px;
+            padding-left: 2px;
+            color: black;
+            font-size: 24px;
+            font-weight: 300;
+        }
+        .checkouth2 {
+            margin-top: 0px;
+            margin-left: 10px;
+            background-color: rgba(86, 187, 234, 0.29);
+            font-family: Lato, sans-serif;
+            color: black;
+            line-height: 45px;
+            font-style: normal;
+            font-weight: 300;
+            text-align: left;
+            text-shadow: none;
+            font-size: 30px;
+            text-transform: none;
+        }
+        .checkouth3 {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.29);
+            text-transform: none;
+            padding: 15px 0 5px;
+            color: rgb(34, 34, 34);
+            font-family: Lato, sans-serif;
+            font-size: 21px;
+            font-weight: 300;
+            text-align: left;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin: 15px 0;
+            line-height: 20px;
+        }
+        .checkouth3 .price-with-coupon {
+            font-size: 21px;
+            font-weight: 300;
+        }
+        .checkouth4 {
+            font-family: Lato, sans-serif;
+            margin: 10px 0px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+            padding-left: 25px;
+            color: black;
+            font-size: 21px;
+            line-height: 24px;
+            font-weight: 300;
+            text-align: left;
+        }
+        .w-input:focus {
+            border-color: rgba(82, 168, 236, 0.8);
+            outline: 0px none;
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(82, 168, 236, 0.6);
+        }
+        .w-input {
+            font-size: 14px;
+            font-family: Lato,sans-serif;
+        }
+        .promo-label {
+            font-family: Lato,sans-serif;
+            font-size: 14px;
+            line-height: 21px;
+            color: rgb(86, 187, 234);
+        }
+        .payment-button {
+            text-shadow: none;
+            box-shadow: none;
+            border: none;
+            background-image: none;
+            color: #fff;
+            font-weight: 500;
+            padding: 10px 15px;
+            font-size: 14px;
+        }
+        .invalid {
+            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px red;
+        }
+    }
+}
+
+//-----------------------------------------------
+// Dashboard
+//-----------------------------------------------
+
+body .dashboard {
+    .my-courses .empty-dashboard-message a {
+        padding: 15px 30px;
+        text-shadow: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+//-----------------------------------------------
+// Courseware
+//-----------------------------------------------
+
+body nav.course-material .inner-wrapper {
+    max-width: 960px;
+}
+
+body {
+    h1.top-header, div.course-wrapper section.course-content ol.vert-mod > li header, div.info-wrapper section.updates > h1, div.syllabus h1, div.profile-wrapper section.course-info header, div.gradebook-wrapper section.gradebook-content h1, div.static_tab_wrapper h1, .instructor-dashboard-wrapper section.instructor-dashboard-content h1, section.instructor-dashboard-content-2 h1 {
+        font-weight: 300;
+    }
+}
+
+//-----------------------------------------------
+// Static pages
+//-----------------------------------------------
+
+body .static-container {
+    p + h2 {
+        margin-bottom: 20px;
+    }
+}
+
