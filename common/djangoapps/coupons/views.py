@@ -12,7 +12,7 @@ from django.utils.translation import ugettext as _
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 
-from mitxmako.shortcuts import render_to_response
+from edxmako.shortcuts import render_to_response
 
 from coupons.models import get_base_price_for_course_id, Coupon
 from courseware.access import has_access

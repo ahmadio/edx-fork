@@ -55,8 +55,8 @@ FEATURES['ENABLE_DISCUSSION_SERVICE'] = True
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
 ###################################### Stripe #################################
-STRIPE_KEY_PUBLIC = AUTH_TOKENS.get("STRIPE_KEY_PUBLIC", "")
-STRIPE_KEY_SECRET = AUTH_TOKENS.get("STRIPE_KEY_SECRET", "")
+STRIPE_KEY_PUBLIC = 'pk_test_W0ylESS65cR7UpewUNuI2k6o'
+STRIPE_KEY_SECRET = 'sk_test_TddMoykYgyC7rfxs13USIi0Y'
 
 ###################################### CELERY  ################################
 
