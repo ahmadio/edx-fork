@@ -208,6 +208,21 @@ SERVER_EMAIL = 'devops@example.com'
 ADMINS = ()
 MANAGERS = ADMINS
 
+# # Email
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.mailgun.org'
+# EMAIL_PORT = 25
+# EMAIL_USE_TLS = True
+# EMAIL_HOST_USER = 'postmaster@uxe.mailgun.org'
+# EMAIL_HOST_PASSWORD = '09-xz0sysg73'
+# DEFAULT_FROM_EMAIL = 'dares@uxe.mailgun.org'
+# DEFAULT_FEEDBACK_EMAIL = 'feedback@uxe.mailgun.org'
+# SERVER_EMAIL = 'devops@uxe.mailgun.org'
+# ADMINS = (
+#     ('Dares Admin', 'mygooglizer@gmail.com'),
+#     )
+# MANAGERS = ADMINS
+
 # Static content
 STATIC_URL = '/static/' + git.revision + "/"
 ADMIN_MEDIA_PREFIX = '/static/admin/'

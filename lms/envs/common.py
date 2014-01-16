@@ -174,7 +174,7 @@ FEATURES = {
 
     # Toggle to enable chat availability (configured on a per-course
     # basis in Studio)
-    'ENABLE_CHAT': False,
+    'ENABLE_CHAT': True,
 
     # Allow users to enroll with methods other than just honor code certificates
     'MULTIPLE_ENROLLMENT_ROLES': False,
@@ -452,15 +452,28 @@ ROOT_URLCONF = 'lms.urls'
 IGNORABLE_404_ENDS = ('favicon.ico')
 # NOTE: Please set ALLOWED_HOSTS to some sane value, as we do not allow the default '*'
 
-# Platform Email
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-DEFAULT_FROM_EMAIL = 'registration@example.com'
-DEFAULT_FEEDBACK_EMAIL = 'feedback@example.com'
-SERVER_EMAIL = 'devops@example.com'
-TECH_SUPPORT_EMAIL = 'technical@example.com'
-CONTACT_EMAIL = 'info@example.com'
-BUGS_EMAIL = 'bugs@example.com'
-ADMINS = ()
+# # Platform Email
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+# DEFAULT_FROM_EMAIL = 'registration@example.com'
+# DEFAULT_FEEDBACK_EMAIL = 'feedback@example.com'
+# SERVER_EMAIL = 'devops@example.com'
+# TECH_SUPPORT_EMAIL = 'technical@example.com'
+# CONTACT_EMAIL = 'info@example.com'
+# BUGS_EMAIL = 'bugs@example.com'
+# ADMINS = ()
+# MANAGERS = ADMINS
+
+# SMTP Platform Email
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+DEFAULT_FROM_EMAIL = 'dares@uxe.mailgun.org'
+DEFAULT_FEEDBACK_EMAIL = 'feedback@uxe.mailgun.org'
+SERVER_EMAIL = 'devops@uxe.mailgun.org'
+TECH_SUPPORT_EMAIL = 'technical@uxe.mailgun.org'
+CONTACT_EMAIL = 'info@uxe.mailgun.org'
+BUGS_EMAIL = 'bugs@uxe.mailgun.org'
+ADMINS = (
+    ('Dares Admin', 'mygooglizer@gmail.com'),
+    )
 MANAGERS = ADMINS
 
 # Static content
@@ -890,7 +903,7 @@ CELERYD_HIJACK_ROOT_LOGGER = False
 
 # Suffix used to construct 'from' email address for bulk emails.
 # A course-specific identifier is prepended.
-BULK_EMAIL_DEFAULT_FROM_EMAIL = 'no-reply@example.com'
+BULK_EMAIL_DEFAULT_FROM_EMAIL = 'dares@uxe.mailgun.org'
 
 # Parameters for breaking down course enrollment into subtasks.
 BULK_EMAIL_EMAILS_PER_TASK = 100
