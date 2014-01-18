@@ -28,9 +28,7 @@ Studio: Newly-created courses default to being published on Jan 1, 2030
 
 Studio: Added pagination to the Files & Uploads page.
 
-<<<<<<< HEAD
 Common: Centralized authorization mechanisms and removed the app-specific ones.
-=======
 
 LMS: Added unicode support with Arabic LMS view (sass/css).
 CMS: Added unicode support with Arabic CMS view (sass/css).
@@ -43,7 +41,6 @@ CMS: Added unicode support with Arabic CMS view (sass/css).
 Common: Added unicode support.
 
 Studio: Added pagination to the Files & Uploads page.
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
 
 Blades: Video player improvements:
   - Disable edX controls on iPhone/iPod (native controls are used).
