@@ -53,10 +53,20 @@
   <link rel="icon" type="image/x-icon" href="${static.url(MicrositeConfiguration.get_microsite_configuration_value('favicon_path', settings.FAVICON_PATH))}" />
   
     <%static:css group='style-vendor'/>
+
     % if get_language_bidi():
     <%static:css group='style-app-rtl'/>
     <%static:css group='style-app-extend1-rtl'/>
     <%static:css group='style-app-extend2-rtl'/>
+    <link rel="stylesheet" media="screen" href="http://openfontlibrary.org/face/droid-arabic-kufi" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        * {
+          font-family: 'Droid Arabic Kufi' !important; 
+          font-weight: normal !important; 
+          font-style: normal !important;
+        }
+        
+    </style>
     % else:
     <%static:css group='style-app'/>
     <%static:css group='style-app-extend1'/>
@@ -64,6 +74,8 @@
     % endif
 
   <%static:js group='main_vendor'/>
+
+  
 
   <%block name="headextra"/>
 
