@@ -40,8 +40,10 @@ class CapaModule(CapaMixin, XModule):
         """
         super(CapaModule, self).__init__(*args, **kwargs)
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
+# =======
+# this conflict should be revised as this section get refactored in a capa_base.py
+# see https://github.com/edx/edx-platform/commits/master/common/lib/xmodule/xmodule/capa_module.py
         due_date = self.due
 
         if self.graceperiod is not None and due_date:

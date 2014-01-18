@@ -1,7 +1,7 @@
 /*
  * This file is dynamically generated and ignored by Git.
  * DO NOT MAKE CHANGES HERE. Instead, go edit its template:
- * /home/abdallah/edx-rtl-fork/edx-platform/lms/static/sass/course-rtl.scss.mako
+ * /edx/app/edxapp/edx-platform/lms/static/sass/course-rtl.scss.mako
  */
 @import 'bourbon/bourbon';
 
@@ -10,6 +10,8 @@
 @import 'base/mixins';
 @import 'base/variables';
 
+  // import theme's Sass overrides
+  @import '';
 
 @import 'base/base_rtl';
 @import 'base/extends';
