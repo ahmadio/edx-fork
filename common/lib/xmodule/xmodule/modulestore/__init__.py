@@ -30,12 +30,12 @@ URL_RE = re.compile("""
 
 # TODO (cpennington): We should decide whether we want to expand the
 # list of valid characters in a location
-INVALID_CHARS = re.compile(r"[^\w.-]")
+INVALID_CHARS = re.compile(r"[^\w.%-]", re.UNICODE)
 # Names are allowed to have colons.
-INVALID_CHARS_NAME = re.compile(r"[^\w.:-]")
+INVALID_CHARS_NAME = re.compile(r"[^\w.:%-]", re.UNICODE)
 
 # html ids can contain word chars and dashes
-INVALID_HTML_CHARS = re.compile(r"[^\w-]")
+INVALID_HTML_CHARS = re.compile(r"[^\w-]", re.UNICODE)
 
 _LocationBase = namedtuple('LocationBase', 'tag org course category name revision')
 
@@ -175,25 +175,44 @@ class Location(_LocationBase):
             check_list(list_)
 
         def check_list(list_):
+<<<<<<< HEAD
             list_ = list(list_)
             for val in list_[:4] + [list_[5]]:
                 _check_location_part(val, INVALID_CHARS)
             # names allow colons
             _check_location_part(list_[4], INVALID_CHARS_NAME)
+=======
+            def check(val, regexp):
+                if val is not None and regexp.search(val) is not None:
+                    log.debug(u'invalid characters val="%s", list_="%s"' % (val, list_))
+                    raise InvalidLocationError(u"Invalid characters in '%s'." % (val))
+
+            list_ = list(list_)
+            for val in list_[:4] + [list_[5]]:
+                if val is not None:
+                    check(val, INVALID_CHARS)
+            # names allow colons
+            check(list_[4], INVALID_CHARS_NAME)
+            pass
+>>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
 
         if isinstance(location, Location):
             return location
         elif isinstance(location, basestring):
             match = URL_RE.match(location)
             if match is None:
+<<<<<<< HEAD
                 log.debug("location %r doesn't match URL", location)
+=======
+                log.debug(u'location is instance of %s but no URL match' % basestring)
+>>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
                 raise InvalidLocationError(location)
             groups = match.groupdict()
             check_dict(groups)
             return _LocationBase.__new__(_cls, **groups)
         elif isinstance(location, (list, tuple)):
             if len(location) not in (5, 6):
-                log.debug('location has wrong length')
+                log.debug(u'location has wrong length')
                 raise InvalidLocationError(location)
 
             if len(location) == 5:
@@ -216,9 +235,9 @@ class Location(_LocationBase):
         """
         Return a string containing the URL for this location
         """
-        url = "{0.tag}://{0.org}/{0.course}/{0.category}/{0.name}".format(self)
+        url = u"{0.tag}://{0.org}/{0.course}/{0.category}/{0.name}".format(self)
         if self.revision:
-            url += "@" + self.revision
+            url += u"@" + self.revision
         return url
 
     def html_id(self):
@@ -226,7 +245,7 @@ class Location(_LocationBase):
         Return a string with a version of the location that is safe for use in
         html id attributes
         """
-        id_string = "-".join(str(v) for v in self.list() if v is not None)
+        id_string = u"-".join(v for v in self.list() if v is not None)
         return Location.clean_for_html(id_string)
 
     def dict(self):
@@ -240,6 +259,9 @@ class Location(_LocationBase):
         return list(self)
 
     def __str__(self):
+        return str(self.url().encode("utf-8"))
+
+    def __unicode__(self):
         return self.url()
 
     def __repr__(self):
@@ -254,7 +276,7 @@ class Location(_LocationBase):
         Throws an InvalidLocationError is this location does not represent a course.
         """
         if self.category != 'course':
-            raise InvalidLocationError('Cannot call course_id for {0} because it is not of category course'.format(self))
+            raise InvalidLocationError(u'Cannot call course_id for {0} because it is not of category course'.format(self))
 
         return "/".join([self.org, self.course, self.name])
 

@@ -63,9 +63,14 @@ FEATURES = {
     # edX has explicitly added them to the course creator group.
     'ENABLE_CREATOR_GROUP': False,
 
+<<<<<<< HEAD
     # If set to True, Studio won't restrict the set of advanced components
     # to just those pre-approved by edX
     'ALLOW_ALL_ADVANCED_COMPONENTS': False,
+=======
+    # Added for enabling and disabling Arabic language change.
+    'ENABLE_QRF_SETTINGS': False,
+>>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
 }
 ENABLE_JASMINE = False
 
@@ -278,17 +283,35 @@ PIPELINE_CSS = {
         ],
         'output_filename': 'css/cms-style-app.css',
     },
+    'style-app-rtl': {
+        'source_filenames': [
+            'sass/style-app-rtl.css',
+        ],
+        'output_filename': 'css/cms-style-app-rtl.css',
+    },
     'style-app-extend1': {
         'source_filenames': [
             'sass/style-app-extend1.css',
         ],
         'output_filename': 'css/cms-style-app-extend1.css',
     },
+    'style-app-extend1-rtl': {
+        'source_filenames': [
+            'sass/style-app-extend1-rtl.css',
+        ],
+        'output_filename': 'css/cms-style-app-extend1-rtl.css',
+    },
     'style-xmodule': {
         'source_filenames': [
             'sass/style-xmodule.css',
         ],
         'output_filename': 'css/cms-style-xmodule.css',
+    },
+    'style-xmodule-rtl': {
+        'source_filenames': [
+            'sass/style-xmodule-rtl.css',
+        ],
+        'output_filename': 'css/cms-style-xmodule-rtl.css',
     },
 }
 

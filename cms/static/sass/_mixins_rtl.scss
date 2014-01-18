@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // studio - utilities - mixins and extends
 // ====================
 
@@ -211,6 +212,10 @@
 // ====================
 
 // extends - content - removes list styling/spacing when using uls, ols for navigation and less content-centric cases
+=======
+@import "mixins";
+
+>>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
 %cont-no-list {
   list-style: none;
   margin: 0;
@@ -222,6 +227,7 @@
     margin: 0;
     padding: 0;
   }
+<<<<<<< HEAD
 }
 
 // extends - content - image-replacement hidden text
@@ -258,3 +264,6 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+=======
+}
+>>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
