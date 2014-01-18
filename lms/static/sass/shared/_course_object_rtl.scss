@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .highlighted-courses, .find-courses {
   .courses {
     @include clearfix;
@@ -20,18 +19,10 @@
       padding: 0;
       list-style: none;
 
-=======
-@import "course_object";
-
-.highlighted-courses, .find-courses {
-  .courses {
-    .courses-listing {
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
       .courses-listing-item {
         width: flex-grid(4);
         margin-left: 1.13%;
         float: right;
-<<<<<<< HEAD
 
         &:nth-child(3n+3) {
           margin-right: 0;
@@ -280,9 +271,3 @@
     }
   }
 }
-=======
-      }
-    }
-  }
-}
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
