@@ -190,7 +190,7 @@ hr {
     color: #000;
     width: 60px;
     height: 60px;
-    line-height: 60px;
+    line-height: 63px;
     cursor: pointer;
     background: rgb(235, 122, 119);
     -webkit-transition: all .1s ease-in-out;
@@ -215,7 +215,7 @@ hr {
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 750px;
+    min-height: 300px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -567,8 +567,45 @@ height: 40px;
 }
 
 .wrapper-footer footer .colophon .colophon-about img {
-width: 68px;
-height: 34px;
+width: 101px;
+height: 40px;
 margin-right: 0;
 float: left;
 }
+
+body header.global, body header.global.slim {
+border-bottom: 1px solid rgb(138, 140, 143);
+box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+background: rgb(70, 173, 132);
+height: 60px;
+position: relative;
+width: 100%;
+z-index: 10;
+padding: 0 0;
+}
+
+body header.global nav {
+height: 40px;
+margin: 0 auto;
+padding: 12px 10px 8px;
+max-width: 1180px;
+min-width: 760px;
+}
+
+body header.global.slim nav {
+padding: 12px 10px 8px;
+}
+
+body header.global.slim h1.logo:before {
+content: "";
+display: block;
+height: 40px;
+position: absolute;
+right: 110px;
+top: 0;
+width: 1px;
+}
+
+
+
+
