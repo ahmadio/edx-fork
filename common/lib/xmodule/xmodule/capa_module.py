@@ -421,7 +421,6 @@ class CapaModule(CapaMixin, XModule):
 
         return html
 
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
     def handle_ajax(self, dispatch, data):
         """
         This is called by courseware.module_render, to handle an AJAX call.
@@ -480,8 +479,6 @@ class CapaModule(CapaMixin, XModule):
 
         return json.dumps(result, cls=ComplexEncoder)
 
-<<<<<<< HEAD
-=======
     def is_past_due(self):
         """
         Is it now past this problem's due date, including grace period?
@@ -1011,7 +1008,6 @@ class CapaModule(CapaMixin, XModule):
         return {'success': True,
                 'html': self.get_problem_html(encapsulate=False)}
 
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
 
 class CapaDescriptor(CapaFields, RawDescriptor):
     """
