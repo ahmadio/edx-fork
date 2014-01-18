@@ -767,6 +767,12 @@ PIPELINE_CSS = {
         ],
         'output_filename': 'css/lms-style-course-rtl.css',
     },
+    'skin-flat-rtl': {
+        'source_filenames': [
+            'skins/flat-rtl/css/main.css',
+        ],
+        'output_filename': 'css/falt-rtl.css',
+    },
 }
 
 

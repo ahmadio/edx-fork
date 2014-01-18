@@ -53,6 +53,7 @@
   <link rel="icon" type="image/x-icon" href="${static.url(MicrositeConfiguration.get_microsite_configuration_value('favicon_path', settings.FAVICON_PATH))}" />
   
     <%static:css group='style-vendor'/>
+    <%static:css group='skin-flat-rtl'/>
 
     % if get_language_bidi():
     <%static:css group='style-app-rtl'/>
