@@ -207,13 +207,11 @@ FEATURES = {
     # only edX superusers can perform the downloads)
     'ALLOW_COURSE_STAFF_GRADE_DOWNLOADS': False,
 
-<<<<<<< HEAD
     'ENABLED_PAYMENT_REPORTS': ["refund_report", "itemized_purchase_report", "university_revenue_share", "certificate_status"],
-=======
+    
     # Added for enabling and disabling Arabic language change. (A better
     # solution to be implemented)
     'ENABLE_QRF_SETTINGS': False,
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
 }
 
 # Used for A/B testing
