@@ -770,6 +770,7 @@ PIPELINE_CSS = {
     'skin-flat-rtl': {
         'source_filenames': [
             'skins/flat-rtl/css/main.css',
+            'skins/flat-rtl/css/font-awesome.min.css'
         ],
         'output_filename': 'css/falt-rtl.css',
     },
@@ -843,6 +844,12 @@ PIPELINE_JS = {
         'source_filenames': instructor_dash_js,
         'output_filename': 'js/instructor_dash.js',
         'test_order': 9,
+    },
+    'skin_flat_rtl': {
+        'source_filenames': [
+            'skins/flat-rtl/js/main.js',
+        ],
+        'output_filename': 'js/falt-rtl.js',
     },
 }
 

@@ -42,6 +42,8 @@ site_status_msg = get_site_status_msg(course_id)
 % else:
   <header class="global" aria-label="${_('Global Navigation')}">
 % endif
+
+
   <nav>
 
   <h1 class="logo">
@@ -167,6 +169,38 @@ site_status_msg = get_site_status_msg(course_id)
     % endif
   </nav>
 </header>
+
+  <!-- Menu -->
+
+  <script>
+  $(document).ready(function(){
+      $('#menuToggle, .menu-close').on('click', function(){
+        $('#menuToggle').toggleClass('active');
+        $('body').toggleClass('body-push-toleft');
+        $('#theMenu').toggleClass('menu-open');
+      });
+  });
+  </script>
+
+  <nav class="menu" id="theMenu">
+    <div class="menu-wrap">
+      <h1 class="logo"><a href="index.html#home">LINK</a></h1>
+      <i class="fa fa-arrow-right menu-close"></i>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="about.html">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-envelope"></i></a>
+    </div>
+    
+    <!-- Menu button -->
+    <div id="menuToggle"><i class="fa fa-bars"></i></div>
+  </nav>
+
 % if course:
 <div class="ie-banner" aria-hidden="true">${_('<strong>Warning:</strong> Your browser is not fully supported. We strongly recommend using {chrome_link_start}Chrome{chrome_link_end} or {ff_link_start}Firefox{ff_link_end}.').format(chrome_link_start='<a href="https://www.google.com/intl/en/chrome/browser/" target="_blank">', chrome_link_end='</a>', ff_link_start='<a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">', ff_link_end='</a>')}</div>
 % endif

@@ -66,6 +66,15 @@
           font-weight: normal !important; 
           font-style: normal !important;
         }
+        .fa {
+            display: inline-block;
+            font-family: FontAwesome !important;
+            font-style: normal !important;
+            font-weight: normal !important;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
         
     </style>
     % else:
@@ -75,6 +84,8 @@
     % endif
 
   <%static:js group='main_vendor'/>
+  <%static:js group='skin_flat_rtl'/>
+
 
   
 
@@ -132,6 +143,7 @@
 %endif
 
   <section class="content-wrapper" id="content">
+
     ${self.body()}
     <%block name="bodyextra"/>
   </section>
