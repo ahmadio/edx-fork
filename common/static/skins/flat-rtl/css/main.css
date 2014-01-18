@@ -556,3 +556,19 @@ hr {
     opacity: 1;
 }
 }
+
+
+body header.global.slim h1.logo img {
+height: 40px;
+}
+
+body header.global h1.logo img {
+height: 40px;
+}
+
+.wrapper-footer footer .colophon .colophon-about img {
+width: 68px;
+height: 34px;
+margin-right: 0;
+float: left;
+}

@@ -53,7 +53,6 @@
   <link rel="icon" type="image/x-icon" href="${static.url(MicrositeConfiguration.get_microsite_configuration_value('favicon_path', settings.FAVICON_PATH))}" />
   
     <%static:css group='style-vendor'/>
-    <%static:css group='skin-flat-rtl'/>
 
     % if get_language_bidi():
     <%static:css group='style-app-rtl'/>
@@ -82,6 +81,8 @@
     <%static:css group='style-app-extend1'/>
     <%static:css group='style-app-extend2'/>
     % endif
+    <%static:css group='skin-flat-rtl'/>
+    
 
   <%static:js group='main_vendor'/>
   <%static:js group='skin_flat_rtl'/>
