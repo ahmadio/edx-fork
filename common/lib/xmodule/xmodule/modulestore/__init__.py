@@ -175,37 +175,19 @@ class Location(_LocationBase):
             check_list(list_)
 
         def check_list(list_):
-<<<<<<< HEAD
-            list_ = list(list_)
-            for val in list_[:4] + [list_[5]]:
-                _check_location_part(val, INVALID_CHARS)
-            # names allow colons
-            _check_location_part(list_[4], INVALID_CHARS_NAME)
-=======
-            def check(val, regexp):
-                if val is not None and regexp.search(val) is not None:
-                    log.debug(u'invalid characters val="%s", list_="%s"' % (val, list_))
-                    raise InvalidLocationError(u"Invalid characters in '%s'." % (val))
-
             list_ = list(list_)
             for val in list_[:4] + [list_[5]]:
                 if val is not None:
-                    check(val, INVALID_CHARS)
+                    _check_location_part(val, INVALID_CHARS)
             # names allow colons
-            check(list_[4], INVALID_CHARS_NAME)
-            pass
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
+            _check_location_part(list_[4], INVALID_CHARS_NAME)
 
         if isinstance(location, Location):
             return location
         elif isinstance(location, basestring):
             match = URL_RE.match(location)
             if match is None:
-<<<<<<< HEAD
-                log.debug("location %r doesn't match URL", location)
-=======
-                log.debug(u'location is instance of %s but no URL match' % basestring)
->>>>>>> b9e8215808c3d6e1065e8f07ba2b8759cb0298b4
+                log.debug(u"location %r doesn't match URL", location)
                 raise InvalidLocationError(location)
             groups = match.groupdict()
             check_dict(groups)
