@@ -215,7 +215,8 @@ hr {
     text-align: center;
     background-attachment: relative;
     background-position: center center;
-    min-height: 300px;
+    /*min-height: 400px;*/
+    height: 500px;
     width: 100%;
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -226,6 +227,11 @@ hr {
     -o-background-size: cover;
     background-size: cover;
 }
+
+.find-courses #headerwrap {
+    height: 200px;
+}
+
 #headerwrap h1 {
     margin-top: 130px;
     color: #fff;
@@ -606,6 +612,16 @@ top: 0;
 width: 1px;
 }
 
+body header.global .nav-global li a {
+    color: #fff;
+}
 
+body header.global .nav-global li a:hover {
+    color: rgb(10, 74, 103);;
+}
+
+body .content-wrapper {
+    background-color: rgb(242, 242, 242);
+}
 
 
