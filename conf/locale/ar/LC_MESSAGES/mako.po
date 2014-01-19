@@ -6,7 +6,7 @@
 # Translators:
 # abdallah_n <abdoosh00@gmail.com>, 2013
 # abdallah.nassif <abdallah_n@hotmail.com>, 2013
-# Ahmad Abd Arrahman <mygooglizer@gmail.com>, 2013
+# Ahmad Abd Arrahman <mygooglizer@gmail.com>, 2013-2014
 # khateeb <eng.elkhteeb@gmail.com>, 2013
 # najwan <najwanrousan@gmail.com>, 2013
 msgid ""
@@ -14,7 +14,7 @@ msgstr ""
 "Project-Id-Version: edx-platform\n"
 "Report-Msgid-Bugs-To: translation_team@edx.org\n"
 "POT-Creation-Date: 2014-01-17 17:04-0500\n"
-"PO-Revision-Date: 2014-01-19 16:12+0000\n"
+"PO-Revision-Date: 2014-01-19 18:51+0000\n"
 "Last-Translator: Ahmad Abd Arrahman <mygooglizer@gmail.com>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/edx-platform/language/ar/)\n"
 "MIME-Version: 1.0\n"
@@ -3520,7 +3520,7 @@ msgstr "التسجيل في  {platform_name} "
 
 #: lms/templates/register.html:80
 msgid "Create My {platform_name} Account"
-msgstr ""
+msgstr "إنشئ حسابي على {platform_name}"
 
 #: lms/templates/register.html:95
 msgid "Welcome!"
