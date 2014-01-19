@@ -567,18 +567,11 @@ hr {
 
 
 body header.global.slim h1.logo img {
-height: 40px;
+    height: 40px;
 }
 
 body header.global h1.logo img {
-height: 40px;
-}
-
-.wrapper-footer footer .colophon .colophon-about img {
-width: 101px;
-height: 40px;
-margin-right: 0;
-float: left;
+    height: 40px;
 }
 
 body header.global, body header.global.slim {
@@ -683,4 +676,51 @@ body header.global.slim h2 {
 float: right;
 color: rgb(80, 80, 80);
 text-shadow: 0 1px 0 rgb(206, 206, 206);
+}
+
+
+body.view-register .introduction header .title .title-super, 
+body.view-login .introduction header .title .title-super, 
+body.view-passwordreset .introduction header .title .title-super {
+    text-align: right;
+}
+
+body.view-register .introduction header .title, 
+body.view-login .introduction header .title, 
+body.view-passwordreset .introduction header .title {
+    right: 30px;
+}
+
+body.view-register .introduction header .title .title-sub, 
+body.view-login .introduction header .title .title-sub, 
+body.view-passwordreset .introduction header .title .title-sub {
+    text-align: right;
+}
+
+body.view-register .introduction header,
+body.view-login .introduction header  {
+    background: none;
+}
+
+body .wrapper-footer footer .colophon {
+    float:right;
+}
+
+body .wrapper-footer footer .colophon .nav-colophon {
+    position: relative;
+    width:350px;
+}
+
+body .wrapper-footer footer .colophon .colophon-about p {
+    background: none;
+}
+
+body .wrapper-footer footer .colophon .colophon-about img {
+    width: auto;
+    height: 50px;
+    position: absolute;
+}
+body.view-register .wrapper-footer footer .colophon-about img,
+body.view-login .wrapper-footer footer .colophon-about img {
+    margin: 0;
 }
