@@ -183,6 +183,7 @@ site_status_msg = get_site_status_msg(course_id)
         $('body').toggleClass('body-push-toleft');
         $('#theMenu').toggleClass('menu-open');
         $('header.global h1.logo').toggleClass('logo-push-toleft');
+        $('header.global.slim h2').toggleClass('title-push-toleft');
       });
   });
   </script>
@@ -190,7 +191,7 @@ site_status_msg = get_site_status_msg(course_id)
   <nav class="menu" id="theMenu">
     <div class="menu-wrap">
       <h1 class="logo"></h1>
-      <i class="fa fa-arrow-right menu-close"></i>
+      <i class="fa fa-chevron-right menu-close"></i>
       <a href="/">الرئيسية</a>
       <a href="${reverse('dashboard')}" class="user-link">
         <span class="avatar"></span>
@@ -200,12 +201,9 @@ site_status_msg = get_site_status_msg(course_id)
         <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>
       % endif
       <a href="${reverse('logout')}" role="menuitem">${_("Log Out")}</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
       <a href="#"><i class="fa fa-facebook"></i></a>
       <a href="#"><i class="fa fa-twitter"></i></a>
-      <a href="#"><i class="fa fa-dribbble"></i></a>
+      <a href="#"><i class="fa fa-google-plus"></i></a>
       <a href="#"><i class="fa fa-envelope"></i></a>
     </div>
     
