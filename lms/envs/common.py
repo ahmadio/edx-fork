@@ -771,7 +771,7 @@ PIPELINE_CSS = {
     'skin-flat-rtl': {
         'source_filenames': [
             'skins/flat-rtl/css/main.css',
-            'skins/flat-rtl/css/font-awesome.min.css'
+            # 'skins/flat-rtl/css/font-awesome.min.css'
         ],
         'output_filename': 'css/falt-rtl.css',
     },
