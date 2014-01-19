@@ -5,22 +5,12 @@
 
 <div class="wrapper wrapper-footer">
   <footer>
-    <div class="colophon">
-      <nav class="nav-colophon">
+    <div class="colophon" >
+      <nav class="nav-colophon" style="position: relative; left:420px;">
       <ol>
           <li class="nav-colophon-01">
           <a id="about" href="${marketing_link('ABOUT')}">
               ${_("About")}
-          </a>
-          </li>
-          <li class="nav-colophon-02">
-          <a id="jobs" href="${marketing_link('JOBS')}">
-              ${_("Jobs")}
-          </a>
-          </li>
-          <li class="nav-colophon-03">
-          <a id="press" href="${marketing_link('PRESS')}">
-              ${_("Press")}
           </a>
           </li>
           <li class="nav-colophon-04">
@@ -39,10 +29,11 @@
       <div class="colophon-about">
         <img src="${static.url('images/header-logo.png')}" />
 
-        <p>${_("{platform_name} is a non-profit created by founding partners {Harvard} and {MIT} whose mission is to bring the best of higher education to students of all ages anywhere in the world, wherever there is Internet access. {platform_name}'s free online MOOCs are interactive and subjects include computer science, public health, and artificial intelligence.").format(platform_name="EdX", Harvard="Harvard", MIT="MIT")}</p>
+        <p>${(u'''{platform_name} هو منصة تعليمية متطورة, رؤيتنا تتلخص في تقديم تجربة تعليمية فريدة يكون
+          محورها الإنسان بصفتة المستكشف في تلك الرحلة التعليمية.''').format(platform_name=settings.PLATFORM_NAME)}</p>
       </div>
     </div>
-
+    <%doc>
     <div class="references">
       <nav class="nav-social">
         <ul>
@@ -87,5 +78,6 @@
         </ul>
       </nav>
     </div>
+    </%doc>
   </footer>
 </div>

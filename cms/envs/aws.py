@@ -157,7 +157,8 @@ LOGGING = get_logger_config(LOG_DIR,
                             service_variant=SERVICE_VARIANT)
 
 #theming start:
-PLATFORM_NAME = ENV_TOKENS.get('PLATFORM_NAME', 'edX')
+# PLATFORM_NAME = ENV_TOKENS.get('PLATFORM_NAME', 'Daress')
+PLATFORM_NAME = u'دارِس'
 
 # Event Tracking
 if "TRACKING_IGNORE_URL_PATTERNS" in ENV_TOKENS:
