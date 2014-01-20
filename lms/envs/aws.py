@@ -36,9 +36,9 @@ CONFIG_PREFIX = SERVICE_VARIANT + "." if SERVICE_VARIANT else ""
 
 
 ################################ ALWAYS THE SAME ##############################
-
-DEBUG = False
-TEMPLATE_DEBUG = False
+## will enable debug to figure out the discussion problem
+DEBUG = True
+TEMPLATE_DEBUG = True
 
 EMAIL_BACKEND = 'django_ses.SESBackend'
 SESSION_ENGINE = 'django.contrib.sessions.backends.cache'
