@@ -229,7 +229,3 @@ if len(MICROSITE_CONFIGURATION.keys()) > 0:
         microsites_root=path(MICROSITE_ROOT_DIR)
     )
 
-USE_I18N = True
-LANGUAGES = ( ('ar', 'Arabic'), )
-TIME_ZONE = 'Africa/Cairo'
-LANGUAGE_CODE = 'ar'
