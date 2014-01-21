@@ -400,6 +400,11 @@ urlpatterns += (
     url(r'^shoppingcart/', include('shoppingcart.urls')),
 )
 
+# Coupons urls
+urlpatterns += (
+    url(r'^coupons/', include('coupons.urls')),
+)
+ 
 
 if settings.FEATURES.get('AUTH_USE_OPENID_PROVIDER'):
     urlpatterns += (
