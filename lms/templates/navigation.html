@@ -198,7 +198,7 @@ site_status_msg = get_site_status_msg(course_id)
         <span class="sr">${_("Dashboard for:")} </span> ${user.username}
       </a>
       % if settings.FEATURES.get('COURSES_ARE_BROWSABLE'):
-        <a href="${marketing_link('COURSES')}">${_('Find Courses')}</a>
+        <a href="${marketing_link('COURSES')}">${(u'جميع المقررات')}</a>
       % endif
       <a href="${reverse('logout')}" role="menuitem">${_("Log Out")}</a>
       <a href="#"><i class="fa fa-facebook"></i></a>
