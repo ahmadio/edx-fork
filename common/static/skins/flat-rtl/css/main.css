@@ -669,6 +669,7 @@ body .dashboard .my-courses .listing-courses .course-item {
     padding-bottom: 20px;
     background-color: rgb(214, 214, 214);
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
 }
 
 body .dashboard .my-courses .listing-courses .course-item:last-child {
@@ -682,6 +683,8 @@ body .dashboard .my-courses .course .info {
 
 body .dashboard .my-courses .course .cover {
     height: 130px;
+    border-radius: 7px;
+    box-shadow: 0 2px;
 }
 
 body header.global.slim h2 {
@@ -735,4 +738,8 @@ body .wrapper-footer footer .colophon .colophon-about img {
 body.view-register .wrapper-footer footer .colophon-about img,
 body.view-login .wrapper-footer footer .colophon-about img {
     margin: 0;
+}
+
+body .dashboard .profile-sidebar .user-info>ul {
+    border-radius: 0 0 10px 10px;
 }
