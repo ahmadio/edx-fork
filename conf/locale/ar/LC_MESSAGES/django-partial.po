@@ -1,164 +1,35 @@
 # edX translation file
-# This English source file is machine-generated. Do not check it into github.
+# This English source file is machine-generated. Do not check it into git..
 # Copyright (C) 2014 EdX
 # This file is distributed under the GNU AFFERO GENERAL PUBLIC LICENSE.
 # 
 # Translators:
 # abdallah_n <abdoosh00@gmail.com>, 2013
 # abdallah.nassif <abdallah_n@hotmail.com>, 2013
-# Ahmad Abd Arrahman <mygooglizer@gmail.com>, 2013
+# abdallah_n <abdoosh00@gmail.com>, 2013
+# abdallah.nassif <abdallah_n@hotmail.com>, 2013
+# Ahmad Abd Arrahman <mygooglizer@gmail.com>, 2013-2014
+# a.nassif <a.nassif@sit-mena.com>, 2013
 # a.nassif <a.nassif@sit-mena.com>, 2013
 # khateeb <eng.elkhteeb@gmail.com>, 2013
+# khateeb <eng.elkhteeb@gmail.com>, 2013
 # may <may@qordoba.com>, 2013
+# may <may@qordoba.com>, 2013
+# najwan <najwanrousan@gmail.com>, 2013
 # najwan <najwanrousan@gmail.com>, 2013
 msgid ""
 msgstr ""
 "Project-Id-Version: edx-platform\n"
-"Report-Msgid-Bugs-To: translation_team@edx.org\n"
-"POT-Creation-Date: 2014-01-17 17:04-0500\n"
-"PO-Revision-Date: 2014-01-19 16:11+0000\n"
-"Last-Translator: Ahmad Abd Arrahman <mygooglizer@gmail.com>\n"
+"Report-Msgid-Bugs-To: openedx-translation@googlegroups.com\n"
+"POT-Creation-Date: 2014-01-21 15:09-0500\n"
+"PO-Revision-Date: 2014-01-21 20:31+0000\n"
+"Last-Translator: nedbat <ned@edx.org>\n"
 "Language-Team: Arabic (http://www.transifex.com/projects/p/edx-platform/language/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Language: ar\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
-
-#: cms/djangoapps/contentstore/utils.py:25
-msgid "Open Ended Panel"
-msgstr "لوحة ذات النهايات المفتوحة "
-
-#: cms/djangoapps/contentstore/utils.py:26
-msgid "My Notes"
-msgstr "ملاحظاتي"
-
-#: cms/djangoapps/contentstore/views/assets.py:218
-msgid "Upload completed"
-msgstr "تم الانتهاء من عملية التحميل "
-
-#: cms/djangoapps/contentstore/views/course.py:225
-msgid ""
-"Unable to create course '{name}'.\n"
-"\n"
-"{err}"
-msgstr "غير قادر على إنشاء المقرر '{name}'.\n\n{err}"
-
-#: cms/djangoapps/contentstore/views/course.py:237
-msgid ""
-"There is already a course defined with the same organization, course number,"
-" and course run. Please change either organization or course number to be "
-"unique."
-msgstr "يوجد بالفعل مقرر معرّف مسبقا بنفس اسم المؤسسة ورقم المقرر وتشغيله. الرجاء تغيير إما اسم المؤسسة أو رقم المقرر ليكون متميزاً."
-
-#: cms/djangoapps/contentstore/views/course.py:243
-#: cms/djangoapps/contentstore/views/course.py:247
-#: cms/djangoapps/contentstore/views/course.py:269
-#: cms/djangoapps/contentstore/views/course.py:272
-msgid ""
-"Please change either the organization or course number so that it is unique."
-msgstr "الرجاء تغيير إما اسم المؤسسة أو رقم المقرر ليكون متميزاً."
-
-#: cms/djangoapps/contentstore/views/course.py:265
-msgid ""
-"There is already a course defined with the same organization and course "
-"number. Please change at least one field to be unique."
-msgstr "يوجد بالفعل مقرر معرّف مسبقا بنفس اسم المؤسسة ورقم المقرر. الرجاء تغيير حقل واحد على الأقل حتى يكون المقرر متميزاً."
-
-#: cms/djangoapps/contentstore/views/import_export.py:82
-msgid "We only support uploading a .tar.gz file."
-msgstr "ندعم فقط تحميل ملفات بصيغة  .tar.gz"
-
-#: cms/djangoapps/contentstore/views/import_export.py:119
-msgid "File upload corrupted. Please try again"
-msgstr "حدث خطأ في تحميل الملف. الرجاء إعادة المحاولة "
-
-#: cms/djangoapps/contentstore/views/import_export.py:207
-msgid "Could not find the course.xml file in the package."
-msgstr "لم نتمكن من إيجاد الملف course.xml في الحزمة."
-
-#: cms/djangoapps/contentstore/views/item.py:326
-msgid "Duplicate of '{0}'"
-msgstr ""
-
-#: cms/djangoapps/contentstore/views/tabs.py:38
-msgid "Courseware"
-msgstr "المنهاج التعليمي"
-
-#: cms/djangoapps/contentstore/views/tabs.py:39
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:111
-msgid "Course Info"
-msgstr "معلومات المقرر"
-
-#: cms/djangoapps/contentstore/views/tabs.py:40
-msgid "Discussion"
-msgstr ""
-
-#: cms/djangoapps/contentstore/views/tabs.py:41
-msgid "Wiki"
-msgstr ""
-
-#: cms/djangoapps/contentstore/views/tabs.py:42
-msgid "Progress"
-msgstr "التطور "
-
-#: cms/djangoapps/contentstore/views/user.py:101
-msgid "Insufficient permissions"
-msgstr "صلاحيات غير كافية"
-
-#: cms/djangoapps/contentstore/views/user.py:109
-msgid "Could not find user by email address '{email}'."
-msgstr "لا يوجد مستخدم بالبريد الإلكتروني '{email}'."
-
-#: cms/djangoapps/contentstore/views/user.py:131
-msgid "User {email} has registered but has not yet activated his/her account."
-msgstr "المستخدم {email} قام بالتسجيل ولكن لم يقم بعد بتفعيل حسابه."
-
-#: cms/djangoapps/contentstore/views/user.py:147
-msgid "`role` is required"
-msgstr "\"الدور\" مطلوب "
-
-#: cms/djangoapps/contentstore/views/user.py:153
-msgid "Only instructors may create other instructors"
-msgstr "الموجّهون فقط هم من بإمكانهم إنشاء موجهين آخرين"
-
-#: cms/djangoapps/contentstore/views/user.py:189
-msgid "You may not remove the last instructor from a course"
-msgstr "لا يمكنك حذف آخر موجّه من مقرر"
-
-#: cms/djangoapps/course_creators/models.py:33
-msgid "unrequested"
-msgstr "لم يُطلب"
-
-#: cms/djangoapps/course_creators/models.py:34
-msgid "pending"
-msgstr "معلّق"
-
-#: cms/djangoapps/course_creators/models.py:35
-msgid "granted"
-msgstr "ممنوح"
-
-#: cms/djangoapps/course_creators/models.py:36
-msgid "denied"
-msgstr "مرفوض"
-
-#: cms/djangoapps/course_creators/models.py:39
-msgid "Studio user"
-msgstr "مستخدم الاستوديو"
-
-#: cms/djangoapps/course_creators/models.py:41
-msgid "The date when state was last updated"
-msgstr "تاريخ آخر تحديث للحالة"
-
-#: cms/djangoapps/course_creators/models.py:43
-msgid "Current course creator state"
-msgstr "الحالة الحالية لصاحب المقرر"
-
-#: cms/djangoapps/course_creators/models.py:44
-msgid ""
-"Optional notes about this user (for example, why course creation access was "
-"denied)"
-msgstr "ملاحظات اختيارية عن هذا المستخدم (مثلاً، لماذا تم رفض طلب الدخول لإنشاء مقرر)"
 
 #: common/djangoapps/course_modes/models.py:43
 msgid "Honor Code Certificate"
@@ -334,17 +205,190 @@ msgstr "الاسم مطلوب"
 msgid "Invalid ID"
 msgstr "رقم تعريف بالهوية غير صحيح"
 
-#: common/lib/capa/capa/responsetypes.py:880
-msgid "There was a problem with the staff answer to this problem"
+#: common/lib/capa/capa/capa_problem.py:375
+msgid "Cannot rescore problems with possible file submissions"
+msgstr ""
+
+#: common/lib/capa/capa/inputtypes.py:623
+msgid ""
+"Your file(s) have been submitted. As soon as your submission is graded, this"
+" message will be replaced with the grader's feedback."
+msgstr ""
+
+#: common/lib/capa/capa/inputtypes.py:695
+msgid ""
+"Your answer has been submitted. As soon as your submission is graded, this "
+"message will be replaced with the grader's feedback."
+msgstr ""
+
+#: common/lib/capa/capa/inputtypes.py:732
+msgid ""
+"Submitted. As soon as a response is returned, this message will be replaced "
+"by that feedback."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:307
+msgid "Error {err} in evaluating hint function {hintfn}."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:308
+msgid "(Source code line unavailable)"
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:309
+msgid "See XML source line {sourcenum}."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:884
+msgid "There was a problem with the staff answer to this problem."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:897
+msgid "Could not interpret '{student_answer}' as a number."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:906
+msgid "You may not use variables ({bad_variables}) in numerical problems."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:915
+msgid "factorial function evaluated outside its domain:'{student_answer}'"
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:922
+msgid "Invalid math syntax: '{student_answer}'"
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:1355
+msgid "CustomResponse: check function returned an invalid dictionary!"
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:1625
+msgid ""
+"Unable to deliver your submission to grader (Reason: {error_msg}). Please "
+"try again later."
+msgstr ""
+
+#. Translators: 'grader' refers to the edX automatic code grader.
+#: common/lib/capa/capa/responsetypes.py:1648
+msgid "Invalid grader reply. Please contact the course staff."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:1976
+msgid "Invalid input: {bad_input} not permitted in answer."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:1991
+msgid ""
+"factorial function not permitted in answer for this problem. Provided answer"
+" was: {bad_input}"
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:1998
+msgid "Invalid input: Could not parse '{bad_input}' as a formula."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:2006
+msgid "Invalid input: Could not parse '{bad_input}' as a formula"
+msgstr ""
+
+#. Translators: 'SchematicResponse' is a problem type and should not be
+#. translated.
+#: common/lib/capa/capa/responsetypes.py:2149
+msgid "Error in evaluating SchematicResponse. The error was: {error_msg}"
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:2721
+msgid "The Staff answer could not be interpreted as a number."
+msgstr ""
+
+#: common/lib/capa/capa/responsetypes.py:2735
+msgid "Could not interpret '{given_answer}' as a number."
 msgstr ""
 
 #: common/lib/xmodule/xmodule/capa_base.py:366
 msgid "Check"
-msgstr "تفقد"
+msgstr "تحقق"
 
 #: common/lib/xmodule/xmodule/capa_base.py:367
 msgid "Final Check"
-msgstr "تفقد أخير "
+msgstr "تحقق أخير "
+
+#: common/lib/xmodule/xmodule/capa_base.py:501
+msgid "Warning: The problem has been reset to its initial state!"
+msgstr ""
+
+#. Translators: Following this message, there will be a bulleted list of
+#. items.
+#: common/lib/xmodule/xmodule/capa_base.py:505
+msgid ""
+"The problem's state was corrupted by an invalid submission. The submission "
+"consisted of:"
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:512
+msgid "If this error persists, please contact the course staff."
+msgstr ""
+
+#. Translators: 'closed' means the problem's due date has passed. You may no
+#. longer attempt to solve the problem.
+#: common/lib/xmodule/xmodule/capa_base.py:870
+#: common/lib/xmodule/xmodule/capa_base.py:1057
+#: common/lib/xmodule/xmodule/capa_base.py:1106
+msgid "Problem is closed."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:876
+msgid "Problem must be reset before it can be checked again."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:884
+msgid "You must wait at least {wait} seconds between submissions."
+msgstr ""
+
+#. Translators: {msg} will be replaced with a problem's error message.
+#: common/lib/xmodule/xmodule/capa_base.py:911
+msgid "Error: {msg}"
+msgstr ""
+
+#. Translators: 'rescoring' refers to the act of re-submitting a student's
+#. solution so it can get a new score.
+#: common/lib/xmodule/xmodule/capa_base.py:977
+msgid "Problem's definition does not support rescoring."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:982
+msgid "Problem must be answered before it can be graded again."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:1067
+msgid "Problem needs to be reset prior to save."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:1075
+msgid "Your answers have been saved."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:1077
+msgid ""
+"Your answers have been saved but not graded. Click 'Check' to grade them."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_base.py:1114
+msgid "Refresh the page and make an attempt before resetting."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_module.py:68
+msgid ""
+"We're sorry, there was an error with processing your request. Please try "
+"reloading your page and trying again."
+msgstr ""
+
+#: common/lib/xmodule/xmodule/capa_module.py:73
+msgid ""
+"The state of this problem has changed since you loaded this page. Please "
+"refresh your page."
+msgstr ""
 
 #: common/lib/xmodule/xmodule/video_module.py:305
 msgid "A YouTube URL or a link to a file hosted anywhere on the web."
@@ -597,7 +641,7 @@ msgstr ""
 
 #: lms/djangoapps/dashboard/sysadmin.py:598
 msgid "instructors"
-msgstr ""
+msgstr "المشرفون "
 
 #: lms/djangoapps/dashboard/sysadmin.py:599
 msgid "Enrollment information for all courses"
@@ -1744,7 +1788,7 @@ msgstr "إغلاق النموذج  "
 
 #: lms/templates/wiki/edit.html:51
 msgid "Wiki Preview"
-msgstr ""
+msgstr "معاينة الويكي"
 
 #: lms/templates/wiki/edit.html:51 lms/templates/wiki/history.html:207
 #: lms/templates/wiki/history.html:238

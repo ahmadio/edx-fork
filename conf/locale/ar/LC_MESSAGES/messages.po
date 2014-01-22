@@ -4,6 +4,8 @@
 # 
 # Translators:
 # abdallah.nassif <abdallah_n@hotmail.com>, 2013
+# abdallah.nassif <abdallah_n@hotmail.com>, 2013
+# khateeb <eng.elkhteeb@gmail.com>, 2013
 # khateeb <eng.elkhteeb@gmail.com>, 2013
 msgid ""
 msgstr ""
