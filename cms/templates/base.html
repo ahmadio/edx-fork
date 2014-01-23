@@ -269,12 +269,15 @@
       <%block name="content"></%block>
       </div>
 
+      <%doc>
       % if user.is_authenticated():
       <script type="text/javascript">
         require(['js/sock']);
       </script>
       <%include file="widgets/sock.html" />
       % endif
+      </%doc>
+
 
       <%include file="widgets/footer.html" />
       <%include file="widgets/tender.html" />

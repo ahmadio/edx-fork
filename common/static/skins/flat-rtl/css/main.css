@@ -743,3 +743,7 @@ body.view-login .wrapper-footer footer .colophon-about img {
 body .dashboard .profile-sidebar .user-info>ul {
     border-radius: 0 0 10px 10px;
 }
+
+body #forgot-password-modal #password-reset .form-actions button[type="submit"] {
+    margin-right: 0px;
+}

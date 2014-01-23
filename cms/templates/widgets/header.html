@@ -115,8 +115,7 @@
       % endif
     </div>
 
-    ## commenting wrapper of auth and help out, user will have to login to lms then navigate to studio
-    <%doc>
+    
     <div class="wrapper wrapper-r">
         <form action="/i18n/setlang/" method="POST" id="language_form" style="display: none">
             <input type="hidden" name="csrfmiddlewaretoken" value="${ csrf_token }"/>
@@ -139,13 +138,17 @@
               <a class="change_to_en" style="display: none">English</a>
             % endif
         % endif
-        <h2 class="sr">${_("Help &amp; Account Navigation")}</h2>
+        ## commenting wrapper of auth and help out, user will have to login to lms then navigate to studio
+        ## <h2 class="sr">${_("Help &amp; Account Navigation")}</h2>
 
         % if get_language_bidi():
           <ol style="margin: 0 0 0 90px">
         % else:
           <ol style="margin: 0 80px 0 0">
         % endif
+
+      <%doc>
+
           <li class="nav-item nav-account-help">
             <h3 class="title"><span class="label">${_("Help")}</span> <i class="icon-caret-down ui-toggle-dd"></i></h3>
 
@@ -165,6 +168,8 @@
               </div>
             </div>
           </li>
+    </%doc>    
+
 
           <li class="nav-item nav-account-user">
             <h3 class="title"><span class="label"><span class="label-prefix sr">${_("Currently signed in as:")}</span><span class="account-username" title="${ user.username }">${ user.username }</span></span> <i class="icon-caret-down ui-toggle-dd"></i></h3>
@@ -196,8 +201,10 @@
               <a class="change_to_en" style="display: none">English</a>
             % endif
         % endif
+
         <h2 class="sr">${_("You're not currently signed in")}</h2>
         <ol style="float: right; margin-right: 15px; margin-left: 15px">
+        <%doc>
           <li class="nav-item nav-not-signedin-hiw">
             <a href="/">${_("How Studio Works")}</a>
           </li>
@@ -207,6 +214,8 @@
           <li class="nav-item nav-not-signedin-signup">
             <a class="action action-signup" href="${reverse('signup')}">${_("Sign Up")}</a>
           </li>
+        </%doc>
+
           <li class="nav-item nav-not-signedin-signin">
             <a class="action action-signin" href="${reverse('login')}">${_("Sign In")}</a>
           </li>
@@ -214,7 +223,6 @@
       </nav>
       % endif
     </div>
-    </%doc>    
   </header>
 </div>
 
