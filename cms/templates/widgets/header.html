@@ -115,6 +115,8 @@
       % endif
     </div>
 
+    ## commenting wrapper of auth and help out, user will have to login to lms then navigate to studio
+    <%doc>
     <div class="wrapper wrapper-r">
         <form action="/i18n/setlang/" method="POST" id="language_form" style="display: none">
             <input type="hidden" name="csrfmiddlewaretoken" value="${ csrf_token }"/>
@@ -212,6 +214,7 @@
       </nav>
       % endif
     </div>
+    </%doc>    
   </header>
 </div>
 
