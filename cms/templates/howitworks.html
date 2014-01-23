@@ -14,12 +14,13 @@
   <section class="content content-header">
     <header>
       ## "edX Studio" should not be translated
-      <h1><span class="wrapper-text-welcome">${_('Welcome to')}</span><span class="logo">edX Studio</span></h1>
-      <p class="tagline">${_("Studio helps manage your courses online, so you can focus on teaching them")}</p>
+      <h1><span class="wrapper-text-welcome">${_('Welcome to')}</span><span class="logo">Daress course builder</span></h1>
+      ## <p class="tagline">${_("Studio helps manage your courses online, so you can focus on teaching them")}</p>
     </header>
   </section>
 </div>
 
+<%doc>
 <div class="wrapper-content-features wrapper">
   <section class="content content-features">
     <header>
@@ -131,7 +132,9 @@
     </ol>
   </section>
 </div>
+</%doc>
 
+<%doc>
 <div class="wrapper-content-cta wrapper">
   <section class="content content-cta">
     <header>
@@ -140,7 +143,7 @@
 
     <ul class="list-actions">
       <li class="action-item">
-        <a href="${reverse('signup')}" class="action action-primary">${_("Sign Up &amp; Start Making an edX Course")}</a>
+        <a href="${reverse('signup')}" class="action action-primary">${_("Sign Up &amp; Start Making a Daress Course")}</a>
       </li>
       <li class="action-item">
         <a href="${reverse('login')}" class="action action-secondary">${_("Already have a Studio Account? Sign In")}</a>
@@ -148,7 +151,9 @@
     </ul>
   </section>
 </div>
+</%doc>
 
+<%doc>
 <div class="content-modal" id="hiw-feature1">
   <h3 class="title">${_("Outlining Your Course")}</h3>
   <figure>
@@ -187,4 +192,5 @@
     <span class="label">${_("close modal")}</span>
   </a>
 </div>
+</%doc>
 </%block>
