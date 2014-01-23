@@ -70,6 +70,9 @@ FEATURES = {
 
     # Added for enabling and disabling Arabic language change.
     'ENABLE_QRF_SETTINGS': False,
+
+    # disable course creation feature for any users except users with is_staff django flag
+    'DISABLE_COURSE_CREATION': True,
     
 }
 ENABLE_JASMINE = False
