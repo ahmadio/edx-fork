@@ -500,3 +500,9 @@ YOUTUBE_API = {
     'url': "http://video.google.com/timedtext",
     'params': {'lang': 'en', 'v': 'set_youtube_id_of_11_symbols_here'}
 }
+
+
+####################### Stripe checkout ###############################
+
+STRIPE_KEY_PUBLIC = 'pk_test_yrNR7N5jcsqo23tbvR8OJZeE'
+STRIPE_KEY_SECRET = 'sk_test_sDshP03YNn7oZlRAQUqlDxlf'
